@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Helados Fabi, riquísimos sabores en Ventanilla.">
+    <title>¡Conoce a Coki! - Helados Fabi</title>
+    <link rel="icon" type="image/png" href="/icon.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="google-site-verification" content="zZWVieZtYoHlGtiXn-P9zzDfhB40xDcAtWxGzxJKM3g" />
+    <style>
+
+        header {
+            background-color: #d32f2f;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2px;
+        }
+        .hero-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        .hero-image {
+            max-width: 100%;
+            width: 450px;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+        .story-box {
+            flex: 1;
+            min-width: 300px;
+            background-color:#ffeb3b;
+            padding: 30px;
+            border-radius: 20px;
+            border: 4px dashed #ffc107;
+        }
+        .story-box h2 {
+            color: #d32f2f;
+            margin-top: 0;
+        }
+        .story-box p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .gallery-title {
+            text-align: center;
+            color: #d32f2f;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .coki-pose {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .coki-pose:hover {
+            transform: translateY(-10px);
+        }
+        .coki-pose img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: contain;
+        }
+        .cta-section {
+            text-align: center;
+            margin-top: 60px;
+            padding: 40px;
+            background-color: #ffc107;
+            border-radius: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #d32f2f;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #b71c1c;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="brand">
+            <a href="index.html" style="font-size: 25px; text-decoration: none; color: black; display: flex; align-items: center; font-weight: bold;">
+                <img class="logo" src="coky/heladosfabi_mascota.png" alt="Logo Helados Fabi">
+                Coki
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tienda.html" class="btn-tienda">Tienda</a></li>
+            <li><a href="coki.html">Coki</a></li>
+        </ul>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars" style="color: rgb(34, 34, 34);" id="iconNav"></i>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!-- Agregamos 'fade-in' a la sección principal -->
+            <section class="hero-section fade-in">
+                <img src="coky/logo_animal1.jpg" alt="Coki en el logo de Helados Fabi" class="hero-image">
+                <img src="coky/logo_animal2.jpg" alt="Coki en el logo de Helados Fabi" class="hero-image">
+                
+                <div class="story-box">
+                    <h2>¡Hola, soy Coki! 🍦</h2>
+                    <p>Soy la nueva mascota oficial de <strong>Helados Fabi</strong>. Nací de la combinación perfecta de 
+                        nuestros sabores vainilla y chocolate: Combinado <br>
+                        Mi misión es sacarte una sonrisa cada vez que nos visites y asegurarme de que disfrutes el mejor helado.</p>
+                </div>
+            </section>
+
+            <h2 class="gallery-title fade-in">¡Conóceme en todas mis facetas!</h2>
+            <div class="gallery-grid">
+                
+                <div class="coki-pose fade-in">
+                    <img src="coky/heladosfabi_mascota_pose1.png" alt="Coki saludando">
+                    <h3>¡HOLA!</h3>
+                </div>
+                <div class="coki-pose fade-in">
+                    <img src="coky/heladosfabi_mascota_pose2.png" alt="Coki dando helado">
+                    <h3>¡El mejor sabor!</h3>
+                </div>
+                <div class="coki-pose fade-in">
+                    <img src="coky/heladosfabi_mascota_pose3.png" alt="Coki con energia">
+                    <h3>¡Lleno de energía!</h3>
+                </div>
+                <div class="coki-pose fade-in">
+                    <img src="coky/heladosfabi_mascota_pose4.png" alt="Coki esperando">
+                    <h3>¡Esperándote!</h3>
+                </div>
+                <div class="coki-pose fade-in">
+                    <img src="coky/heladosfabi_mascota.png" alt="Coki posando">
+                    <h3>¡Team Combinado!</h3>
+                </div>
+            </div>
+
+            <section class="cta-section fade-in">
+                <h2>¿Ya se te antojó un helado?</h2>
+                <p>Ven a visitarnos y pide un helado favorito ya que Coki te esta esperando.</p>
+                <a href="index.html" class="cta-button">Ver nuestro menú</a>
+            </section>
+        </div>
+    </main>
+
+<script src="script.js"></script>
+</body>
+</html>

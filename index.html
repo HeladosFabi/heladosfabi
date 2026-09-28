@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Helados Fabi, riquísimos sabores en Ventanilla.">
+    <title>Helados Fabi</title>
+    <link rel="icon" type="image/png" href="/icon.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="google-site-verification" content="zZWVieZtYoHlGtiXn-P9zzDfhB40xDcAtWxGzxJKM3g" />
+</head>
+<body>
+    
+    <nav>
+        <div class="brand">
+            <a href="index.html" style="font-size: 25px; text-decoration: none; color: black; display: flex; align-items: center; font-weight: bold;">
+                <img class="logo" src="Gallery/Logo.png" alt="Logo Helados Fabi">
+                Helados Fabi
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="coki.html" style="display: flex; align-items: center; gap: 10px; justify-content: center;">Coki <img src="coky/heladosfabi_mascota.png" alt="Coki" width="40px" height="auto"></a></li>
+            <li><a href="tienda.html" class="btn-tienda">Tienda</a></li>
+            <li><a href="#atencion">Horario</a></li>
+            <li><a href="#parahoy">Recomendación</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="https://www.google.com/maps/place/..." target="_blank">Ubicación</a></li>
+        </ul>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <!-- Nuevo globo animado para la tienda -->
+            <div class="tooltip-tienda" id="tooltipTienda">
+                Coki <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <i class="fa-solid fa-bars" style="color: rgb(34, 34, 34);" id="iconNav"></i>
+        </div>
+    </nav>
+    
+    <main>
+        <section class="portada fade-in" id="about">
+            <img src="Gallery/Portada.png" alt="Portada de Helados Fabi">
+            <div>
+                <h2>RIQUÍSIMOS SABORES</h2>
+                <p>Descubre la deliciosa experiencia que te espera en Helados Fabi, en Ventanilla Exzona Comercial. Nuestros helados son elaborados con los mejores ingredientes, garantizando un sabor auténtico y refrescante.</p>
+            </div>
+        </section>
+
+        <section class="contenedorInput fade-in" id="productos">
+            <input type="text" id="input_filter" placeholder="🔍 Buscar helado..."/>
+        </section>
+
+        <ul class="productos" id="iceCream">
+            <li class="fade-in">
+                <img src="Gallery/conos.png" alt="Conos de helado" class="normales">
+                <div>
+                    <a href="cono vainilla chocolate combinado 2.00" onclick="return false;"><ins>CONOS</ins><br>Precio: 2.00 soles</a>
+                </div>
+            </li>
+            <li class="fade-in">
+                <img src="Gallery/2soles.png" alt="Vasos de helado de 2 soles" class="normales">
+                <div>
+                    <a href="vaso vasos con fresa maracuya fosh grajeas 2.00" onclick="return false;"><ins>VASOS</ins><br>Precio: 2.00 soles (maracuyá 2.50)</a>
+                </div>
+            </li>
+            <li class="fade-in">
+                <img src="Gallery/3soles.png" alt="Vasos especiales de 3 soles" class="normales">
+                <div>
+                    <a href="vaso vasos choco donuts chocodonuts lentejas doñapepa doña pepa oreo 3.00" onclick="return false;"><ins>VASOS</ins><br>Precio: 3.00 soles</a>
+                </div>
+            </li>
+            <li class="fade-in">
+                <img src="Gallery/sundaes.png" alt="Sundaes" class="normales">
+                <div>
+                    <a href="sundae sundaes grande fresa maracuya sauco tamarindo menta chocolate manjar aguaymanto 4.50 5.00" onclick="return false;"><ins>SUNDAES</ins><br>Precio: 4.50 soles <br>(maracuyá: 5.00)</a>
+                </div>
+            </li>
+
+            <div class="fade-in"><p>HELADOS ESPECIALES DELICIOSOS</p></div>
+            
+            <li class="fade-in">
+                <img src="Gallery/vasofabito.png" alt="Vaso Fabito" class="especiales">
+                <div>
+                    <a href="vasito vaso fabito especial chocolate mani 3.00" onclick="return false;"><ins>VASO FABITO</ins><br>Precio: 3.00 soles</a>
+                </div>
+            </li>
+            <li class="fade-in">
+                <img src="Gallery/vasoyayito.png" alt="Vaso Yayito" class="especiales">
+                <div>
+                    <a href="vasito yayito especial pecanas nuez coco rayado pasas" onclick="return false;"><ins>VASO YAYITO</ins><br>Precio: 5.00 soles</a>
+                </div>
+            </li>
+            <li class="fade-in">
+                <img src="Gallery/lucuma.png" alt="Sundae de Lúcuma" class="especiales">
+                <div>
+                    <a href="sundae lucuma especial 4.50" onclick="return false;"><ins>SUNDAE LÚCUMA</ins><br>Precio: 4.50 soles</a>
+                </div>
+            </li>
+            <li class="fade-in">
+                <img src="Gallery/ositos.png" alt="Vaso Ositos" class="especiales">
+                <div>
+                    <a href="vaso vasos ositos osito especial 4.00" onclick="return false;"><ins>VASO OSITOS</ins><br>Precio: 4.00 soles</a>
+                </div>
+            </li>
+            <li class="fade-in">
+                <img src="Gallery/pasitasborrachas.png" alt="Pasitas Borrachas" class="especiales">
+                <div>
+                    <a href="pasas pasitas vaso borrachas especial 4.00" onclick="return false;"><ins>PASITAS BORRACHAS</ins><br>Precio: 4.00 soles</a>
+                </div>
+            </li>
+            <li class="fade-in">
+                <img src="Gallery/conosublime.png" alt="Cono Sublime" class="especiales">
+                <div>
+                    <a href="cono sublime especial 5.00" onclick="return false;"><ins>CONO SUBLIME</ins><br>Precio: 5.00 soles</a>
+                </div>
+            </li>
+            <li class="fade-in">
+                <img src="Gallery/vasomani.png" alt="Vaso Maní" class="especiales">
+                <div>
+                    <a href="vaso mani especial 3.50" onclick="return false;"><ins>VASO MANÍ</ins><br>Precio: 3.50 soles</a>
+                </div>
+            </li>
+            <li class="fade-in">
+                <img src="Gallery/chocoyogurt.png" alt="Chocoyogurt" class="especiales">
+                <div>
+                    <a href="vaso choco yogurt chocoyogurt 3.50" onclick="return false;"><ins>CHOCOYOGURT</ins><br>Precio: 3.50 soles</a>
+                </div>
+            </li>
+            <li class="fade-in">
+                <img src="Gallery/mani.png" alt="Cono Maní" class="especiales">
+                <div>
+                    <a href="cono mani 3.00" onclick="return false;"><ins>CONO MANÍ</ins><br>Precio: 3.00 soles</a>
+                </div>
+            </li>
+        </ul>
+
+        <section class="contenedorElse fade-in" id="atencion">
+            <p>HORARIO DE ATENCIÓN</p>
+            <a>De Lunes a Domingo</a><br>
+            <a>De 10:00am - 10:00pm</a><br>
+            <div id="OpenClose"></div>
+        </section>
+
+        <section id="parahoy" class="fade-in">
+            <button id="btn_weather">✨ Recomendaciones para hoy</button>
+            <div id="toggle-content" class="toggle-content">
+                <p id="recomendation">CARGANDO...</p>
+            </div>
+        </section>
+
+        <section class="contenedorElse fade-in" id="contacto">
+            <p>CONTACTO:</p>
+            <a>Mandarme mensaje al </a><a href="tel:+51954695911"><ins>954695911</ins></a> <a>o al </a><a href="tel:+51963532917"><ins>963532917</ins></a>
+        </section>
+
+        <section id="Feedback" class="fade-in">
+            <p>Ayúdanos a mejorar (quejas o recomendaciones)</p>
+            <form action="https://formsubmit.co/heladosfabi+criticas@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="HELADERÍA FABI - Opinión de usuario">
+                
+                <label for="nombre">Tu nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej: Jose Perez">
+
+                <label for="email">Tu correo (opcional):</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" cols="30" rows="5" required placeholder="Escribe aquí tu opinión..."></textarea>
+
+                <input type="submit" value="Enviar Comentario">
+
+                <input type="hidden" name="_next" value="https://heladosfabi.com/gracias">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+            </form>
+        </section>
+
+        <button onclick="scrollToTop()" id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+    </main>
+    
+<script src="script.js"></script>
+</body>
+</html>
